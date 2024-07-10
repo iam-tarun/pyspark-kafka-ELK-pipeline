@@ -1,0 +1,8 @@
+The Part 2 of assignment is done in databricks community edition
+The link to the notebook is https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3664271699826134/3415248045185465/373535317718030/latest.html
+You can import it and use it in the databricks or you can use the ipynb file to run
+maven coordinates for graphframes library is graphframes:graphframes:0.8.1-spark3.0-s_2.12 (to use in databricks)
+the link for the dataset is "https://drive.google.com/uc?id=1Dx_wKGvcdlKvfEaM2Z_6C0gJkTn181sK"
+the dataset is also available in the submission
+
+Tarun Teja Obbina (txo220011)

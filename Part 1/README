@@ -1,0 +1,13 @@
+#The Part 1 submission contains 2 python files (fetch_data.py and count_named_entities.py)
+
+#fetch_data.py need two arguments (bootstrap_servers: "localhost:9092", topic: "topic1") one plots folder with bar plots of named entities and one conf file for logstash configuration
+#sample command to run fetch_data.py => "python fetch_data.py localhost:9092 topic1" or "spark-submit fetch_data.py localhost:9092 topic1"
+
+#count_named_entities.py needs five arguments (bootstrap_servers: "localhost:9092", topic1: "topic to fetch data from", topic2: "topic to store named entities into",  spark-jar-packages: "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1", checkpoint-location: "./checkpoint")
+#sample command to run count_named_entities.py => "python count_named_entities.py localhost:9092 topic1 topic2 org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 ./checkpoint" or "spark-submit count_named_entities.py localhost:9092 topic1 topic2 org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 ./checkpoint"
+
+#All the necessary packages are mentioned in the requirements.txt file
+
+#The order of execution should be (elasticsearch -> kibana -> logstash -> fetch_data.py -> count_named_entities.py)
+
+#Tarun Teja Obbina (txo220011)
